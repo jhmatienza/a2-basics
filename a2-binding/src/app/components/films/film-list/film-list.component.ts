@@ -12,8 +12,9 @@ export class FilmListComponent {
   posterPreview: string = '';
   searchField: string = 'title';
 
-  onClickDeleteFilm(title: string): void {
-    this.films = this.films.filter(f => f.title !== title);
+  onDeleteFilm(filmToDelete: Film): void {
+    debugger;
+    this.films = this.films.filter(film => film !== filmToDelete);
   }
 
   ocClickCreateFilm(): void {
